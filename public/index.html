@@ -12,6 +12,9 @@
 
 <script>
 
+var ääni = new Audio("ääni.mp3")
+
+
 var deggo=0
 setInterval(function(){
  deggo++
@@ -29,7 +32,9 @@ setInterval(function() {
 }, 100)
 
 
-function lol() {
+function lol(){
+
+ ääni.play()
  if (document.getElementById("mitävaan").value == "valopaa") {
  alert("valopaa oot!")
  }
