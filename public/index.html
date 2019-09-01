@@ -1,10 +1,33 @@
-<html>
-    <head>
-        <title>Japserin sivvu</title>
-    </head>
-    <body>
-        <h1 id="text"></h1>
-        <button onclick="buttonPressed()">Press me!</button>
-        <script src="./index.js"></script>
-    </body>
-</html>
+<html></html>
+
+<title>SUOMISIVU 2.0</title>
+
+</head><body style="background-color: lawngreen;">
+
+<input id="mitävaan">
+
+    <h1>oletko valopaa :-)</h1>
+<button onclick="lol()">ala paina</button>
+
+
+<script>
+
+setInterval(function() {
+    document.body.style.backgroundColor="blue" 
+    document.body.style.color="white"
+    setTimeout(function(){
+     document.body.style.backgroundColor="white" 
+     document.body.style.color="blue"
+ },50)
+}, 100)
+
+
+function lol() {
+ if (document.getElementById("mitävaan").value == "valopaa") {
+ alert("valopaa oot!")
+ }
+}
+
+console.log("hauskaa opetella!")
+
+</script></body></html>
