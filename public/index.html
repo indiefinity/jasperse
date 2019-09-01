@@ -12,6 +12,13 @@
 
 <script>
 
+var deggo=0
+setInterval(function(){
+ deggo++
+ document.getElementById("kuva").style.transform=`rotate(${deggo}deg)`
+},5)
+
+
 setInterval(function() {
     document.body.style.backgroundColor="yellow" 
     document.body.style.color="white"
